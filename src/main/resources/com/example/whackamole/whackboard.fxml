@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="699.0" prefWidth="833.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whackamole.WhackmoleBoardController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text fx:id="highScore" strokeType="OUTSIDE" strokeWidth="0.0" text="High Score: " wrappingWidth="119.28317260742188" />
+   <GridPane prefHeight="541.0" prefWidth="765.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="165.33333587646484" minHeight="105.33331298828125" prefHeight="165.33333587646484" />
+       <RowConstraints maxHeight="229.33335876464844" minHeight="10.0" prefHeight="172.66666412353516" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="321.6666564941406" minHeight="10.0" prefHeight="203.66664123535156" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <ImageView fx:id="img00" fitHeight="165.0" fitWidth="231.0" onMouseClicked="#img00_Clicked" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img01" fitHeight="170.0" fitWidth="233.0" onMouseClicked="#img01_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img02" fitHeight="195.0" fitWidth="232.0" onMouseClicked="#img02_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img10" fitHeight="166.0" fitWidth="247.0" onMouseClicked="#img00_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img11" fitHeight="169.0" fitWidth="231.0" onMouseClicked="#img11_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img12" fitHeight="231.0" fitWidth="230.0" onMouseClicked="#img12_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img20" fitHeight="163.0" fitWidth="231.0" onMouseClicked="#img20_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img21" fitHeight="173.0" fitWidth="233.0" onMouseClicked="#img21_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="img22" fitHeight="199.0" fitWidth="235.0" onMouseClicked="#img22_Clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <image>
+               <Image url="@MoleDown.PNG" />
+            </image>
+         </ImageView>
+      </children>
+   </GridPane>
+   <Text fx:id="score" strokeType="OUTSIDE" strokeWidth="0.0" text="Moles Whacked: 0" />
+   <Text fx:id="missed" layoutX="378.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moles Missed: 0" />
+   <Button mnemonicParsing="false" text="Start Game" />
+   <Text fx:id="missed1" layoutX="384.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Elapsed: " />
+</VBox>
